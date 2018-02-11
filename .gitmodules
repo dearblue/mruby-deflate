@@ -1,0 +1,3 @@
+[submodule "contrib/libdeflate"]
+	path = contrib/libdeflate
+	url = https://github.com/ebiggers/libdeflate.git
