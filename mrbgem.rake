@@ -21,8 +21,8 @@ MRuby::Gem::Specification.new("mruby-deflate") do |s|
   }.compact)
 
   inc = [
-    "contrib/libdeflate",
-    "contrib/libdeflate/common", # for contrib/libdeflate/lib
+    File.join(dir, "contrib/libdeflate"),
+    File.join(dir, "contrib/libdeflate/common"), # for contrib/libdeflate/lib
   ]
 
   cc.include_paths.concat inc
