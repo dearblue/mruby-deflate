@@ -11,7 +11,7 @@
 #include <libdeflate.h>
 #include <mruby-aux.h>
 #include <mruby-aux/scanhash.h>
-#include <mruby-aux/string/hexdigest.h>
+#include <mruby-aux/string.h>
 
 
 #define CLAMP(a, min, max)  ((a) < (min) ? (min) : ((a) < (max) ? (a) : (max)))
