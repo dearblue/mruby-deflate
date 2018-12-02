@@ -386,7 +386,7 @@ dec_s_decode(MRB, VALUE self)
                    "failed libdeflate_%S_decompress - %S (0x%S)",
                    VALUE(decode_traits[format].name),
                    aux_error_message(mrb, res),
-                   mrbx_str_new_as_hexdigest(mrb, res, 4));
+                   VALUE(mrbx_str_new_as_hexdigest(mrb, res, 4)));
     }
 
     mrbx_str_set_len(mrb, dest, destlen);
