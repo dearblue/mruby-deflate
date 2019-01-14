@@ -228,7 +228,7 @@ struct enc_s_encode_args
 static VALUE
 enc_s_encode_try(MRB, VALUE args)
 {
-    struct enc_s_encode_args *argp = mrb_cptr(args);
+    struct enc_s_encode_args *argp = (struct enc_s_encode_args *)mrb_cptr(args);
 
     if (argp->maxdest < 0) {
         size_t boundsize = argp->bound(argp->deflate, argp->srclen);
@@ -253,7 +253,7 @@ enc_s_encode_try(MRB, VALUE args)
 static VALUE
 enc_s_encode_cleanup(MRB, VALUE args)
 {
-    struct enc_s_encode_args *argp = mrb_cptr(args);
+    struct enc_s_encode_args *argp = (struct enc_s_encode_args *)mrb_cptr(args);
 
     libdeflate_free_compressor(argp->deflate);
 
