@@ -76,10 +76,10 @@ output = Deflate.decode(input_data, max_output, output)
 
   * Product name: [mruby-deflate](https://github.com/dearblue/mruby-deflate)
   * Version: 0.1
-  * Product quality: PROTOTYPE
+  * Product quality: PROTOTYPE, UNSTABLE, EXPERIMENTAL
   * Author: [dearblue](https://github.com/dearblue)
   * Project page: <https://github.com/dearblue/mruby-deflate>
-  * Licensing: [BSD-2-Clause License](LICENSE)
+  * Licensing: [2 clause BSD License](LICENSE)
   * Dependency external mrbgems: (NONE)
   * Language feature requirements:
       * generic selection (C11)
@@ -91,10 +91,8 @@ output = Deflate.decode(input_data, max_output, output)
       * [mruby-aux](https://github.com/dearblue/mruby-aux)
         under [2 clause BSD License](https://github.com/dearblue/mruby-aux/blob/master/LICENSE)
         by [dearblue](https://github.com/dearblue)
-      * [mruby-aux-scanhash](https://github.com/dearblue/mruby-aux-scanhash)
-        under [Creative Commons Zero License \(CC0\)](https://github.com/dearblue/mruby-aux-scanhash/blob/master/LICENSE)
-        by [dearblue](https://github.com/dearblue)
   * Bundled C libraries (git-submodules):
-      * [libdeflate](https://github.com/ebiggers/libdeflate)-[0.8](https://github.com/ebiggers/libdeflate/tree/v0.8)
-        under [MIT License](https://github.com/ebiggers/libdeflate/blob/v0.8/COPYING)
+      * [libdeflate](https://github.com/ebiggers/libdeflate)
+        [version 1.1](https://github.com/ebiggers/libdeflate/tree/v1.1)
+        under [MIT License](https://github.com/ebiggers/libdeflate/blob/v1.1/COPYING)
         by [ebiggers](https://github.com/ebiggers)
